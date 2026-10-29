@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Interativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Galeria de Imagens</h1>
+        <p>Explore nossas imagens por categoria</p>
+    </header>
+
+    <nav class="filtros" aria-label="Filtros de categoria">
+        <button class="filtro ativo" data-filtro="todas">Todas</button>
+        <button class="filtro" data-filtro="times">Times</button>
+        <button class="filtro" data-filtro="jogadores">Jogadores</button>
+        <button class="filtro" data-filtro="tecnicos">Tecnico</button>
+    </nav>
+
+    <p id="totalImagens" class="total"></p>
+
+    <main class="galeria">
+        <img
+        src="./img/Foto1.jpg"
+        alt="Real Madrid"
+        class="miniatura destaque"
+        data-categoria="times"
+        data-titulo="Real Madrid"
+        data-descricao="O Real Madrid foi fundado em 1902, na Espanha. Tornou-se um dos clubes mais famosos do mundo, conhecido por conquistar diversos títulos nacionais e internacionais, especialmente na Liga dos Campeões da UEFA. Seu escudo possui as iniciais do clube, uma faixa diagonal azul e uma coroa real concedida pelo rei Afonso XIII em 1920."
+        data-local="Madrid - ES"
+        tabindex="0">
+
+        <img
+        src="./img/Foto2.jpg"
+        alt="Lionel Messi"
+        class="miniatura horizontal"
+        data-categoria="jogadores"
+        data-titulo="Lionel Messi"
+        data-descricao="Lionel Messi nasceu em 1987, na Argentina. Começou sua trajetória profissional no Barcelona, onde se tornou ídolo e conquistou vários títulos, incluindo quatro Ligas dos Campeões. Também venceu a Copa do Mundo de 2022 com a Argentina e é considerado um dos maiores jogadores da história. A imagem mostra sua antiga camisa número 10 do Barcelona."
+        data-local="Rosário - AR"
+        tabindex="1">
+
+        <img
+        src="./img/Foto3.jpg"
+        alt="Carlo Ancelotti"
+        class="miniatura horizontal"
+        data-categoria="tecnicos"
+        data-titulo="Carlo Ancelotti"
+        data-descricao="Carlo Ancelotti nasceu em 1959, na Itália. Antes de ser treinador, foi jogador profissional e defendeu clubes como Milan e Roma. Como técnico, destacou-se por comandar grandes equipes europeias, especialmente o Real Madrid e o Milan. Ficou conhecido pela experiência, tranquilidade e capacidade de conquistar títulos importantes."
+        data-local="Reggiolo - ITA"
+        tabindex="2">
+
+        <img
+        src="./img/Foto4.jpg"
+        alt="FC Barcelona"
+        class="miniatura vertical"
+        data-categoria="times"
+        data-titulo="FC Barcelona"
+        data-descricao="O FC Barcelona foi fundado em 1899, na Catalunha, por iniciativa de Joan Gamper e outros entusiastas do futebol. O clube é conhecido pelo lema Més que un club (“Mais que um clube”), que representa sua ligação com a cultura e a identidade catalãs. Suas cores tradicionais são azul e grená, e sua história inclui grandes jogadores, como Messi, Xavi e Iniesta."
+        data-local="Barcelona - ES"
+        tabindex="3">
+
+        <img
+        src="./img/Foto5.jpg"
+        alt="Cristiano Ronaldo"
+        class="miniatura"
+        data-categoria="jogadores"
+        data-titulo="Cristiano Ronaldo"
+        data-descricao="Cristiano Ronaldo nasceu em 1985, na Ilha da Madeira, em Portugal. Iniciou sua carreira profissional no Sporting, ganhou destaque no Manchester United e alcançou enorme sucesso no Real Madrid, onde conquistou quatro Ligas dos Campeões. Também se tornou uma figura histórica da seleção portuguesa, conquistando a Eurocopa de 2016. É conhecido pela força física, velocidade e capacidade de marcar gols."
+        data-local="Ilha da Madeira - PT"
+        tabindex="4">
+
+        <img
+        src="./img/Foto6.jpg"
+        alt="Pep Guardiola"
+        class="miniatura horizontal"
+        data-categoria="tecnicos"
+        data-titulo="Pep Guardiola"
+        data-descricao="Pep Guardiola nasceu em 1971, na Espanha. Como jogador, destacou-se no Barcelona. Depois de se tornar treinador, revolucionou muitas equipes com um estilo baseado em posse de bola, passes curtos e movimentação organizada. Conquistou títulos importantes com Barcelona, Bayern de Munique e Manchester City, tornando-se um dos técnicos mais influentes do futebol moderno."
+        data-local="Santpedor - ES"
+        tabindex="5">
+
+        <img
+        src="./img/Foto7.jpg"
+        alt="Jürgen Klopp"
+        class="miniatura"
+        data-categoria="tecnicos"
+        data-titulo="Jürgen Klopp"
+        data-descricao="Jürgen Klopp nasceu em 1967, na Alemanha. Ganhou reconhecimento como treinador do Borussia Dortmund, conquistando o Campeonato Alemão em duas temporadas consecutivas. Depois, comandou o Liverpool e levou o clube ao título da Liga dos Campeões em 2019 e da Premier League em 2020, encerrando um longo período sem esse campeonato. Ficou conhecido pelo futebol intenso e pela personalidade carismática."
+        data-local="Stuttgart - GER"
+        tabindex="6">
+
+        <img
+        src="./img/Foto8.jpg"
+        alt="Neymar Jr."
+        class="miniatura"
+        data-categoria="jogadores"
+        data-titulo="Neymar Jr."
+        data-descricao="Neymar Jr. nasceu em 1992, em Mogi das Cruzes, São Paulo. Ganhou destaque no Santos, onde conquistou a Libertadores de 2011. Depois, jogou no Barcelona, formando um trio histórico com Messi e Suárez, e no Paris Saint-Germain. Pela seleção brasileira, conquistou a medalha de ouro olímpica em 2016 e tornou-se um dos principais artilheiros da história da equipe. É conhecido pelo drible e pela criatividade."
+        data-local="Mogi das Cruzes - BR"
+        tabindex="7">
+
+        <img
+        src="./img/Foto9.jpg"
+        alt="Sociedade Esportiva Palmeiras"
+        class="miniatura horizontal"
+        data-categoria="times"
+        data-titulo="Sociedade Esportiva Palmeiras"
+        data-descricao="A Sociedade Esportiva Palmeiras foi fundada em 1914, em São Paulo, por imigrantes italianos, inicialmente com o nome Palestra Italia. Em 1942, durante a Segunda Guerra Mundial, mudou seu nome para Palmeiras devido às restrições da época contra referências às potências do Eixo. O clube conquistou diversos títulos brasileiros e continentais, incluindo as Libertadores de 1999, 2020 e 2021. Suas cores tradicionais são verde e branco."
+        data-local="São Paulo - BR"
+        tabindex="8">
+    </main>
+
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-conteudo" role="dialog" aria-modal="true" aria-labelledby="nomeImagem">
+            <button id="fechar" class="fechar" aria-label="Fechar modal">&times;</button>
+            <button id="anterior" class="navegacao anterior" aria-label="Imagem anterior">&#10094;</button>
+
+            <div class="modal-box">
+                <div class="modal-imagem-wrap">
+                    <img src="" alt="Imagem ampliada" id="imagemModal">
+                </div>
+
+                <aside class="modal-detalhes">
+                    <span id="contador" class="contador">1 de 1</span>
+                    <h2 id="nomeImagem">Título da imagem</h2>
+                    <p id="descricaoImagem" class="descricao">Descrição da imagem.</p>
+
+                    <div class="meta">
+                        <p><strong>Categoria:</strong> <span id="categoriaImagem">-</span></p>
+                        <p><strong>Local:</strong> <span id="localImagem">-</span></p>
+                    </div>
+                </aside>
+            </div>
+
+            <button id="proximo" class="navegacao proximo" aria-label="Próxima imagem">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
